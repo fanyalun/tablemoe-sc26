@@ -1,0 +1,26 @@
+# Weights and large checkpoints
+*.bin
+*.gguf
+*.pth
+*.safetensors
+
+# Python cache
+__pycache__/
+.DS_Store
+
+# Local datasets and generated results
+LMUData/*
+!LMUData/README.md
+models/
+acc_results/
+perf_results/
+
+# Offline table artifacts
+offline_table/qwen_bf16/
+offline_table/qwen_fp16/
+offline_table/ds_bf16/
+offline_table/ds_fp16/
+
+# Local offload caches
+third_party/moe-infinity-offload/
+third_party/pregated-moe-offload/
